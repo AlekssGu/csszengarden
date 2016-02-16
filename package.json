@@ -1,0 +1,37 @@
+{
+  "name": "css-zen-garden",
+  "version": "1.0.0",
+  "description": "CSS Zen Garden design",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlekssGu/csszengarden.git"
+  },
+  "keywords": [
+    "csszengarden",
+    "css",
+    "web",
+    "gulp",
+    "npm"
+  ],
+  "author": "Aleksandrs Gusevs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlekssGu/csszengarden/issues"
+  },
+  "homepage": "https://github.com/AlekssGu/csszengarden#readme",
+  "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-cache": "^0.4.2",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-sass": "^2.2.0",
+    "gulp-uglify": "^1.5.2",
+    "gulp-useref": "^3.0.5",
+    "run-sequence": "^1.1.5"
+  }
+}
