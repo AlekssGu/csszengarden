@@ -1,1 +1,68 @@
 // styles.scss
+$creamy: #d6d6d6;
+$darkblue: #242830;
+$green: #39885e;
+$white: #fff;
+$lightblue: #5389b7;
+
+// First block colors
+$firstBlockLinkColor: $darkblue;
+$firstBlockTextColor: $darkblue;
+$firstUnderlineColor: $green;
+
+#css-zen-garden {
+  font-family: "Futura", Calibri, sans-serif;
+  background-color: $creamy;
+}
+
+#zen-intro header h1 {
+  font-family: "Myriad Pro Bold", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  font-size: 5em;
+}
+#zen-intro header h2 {
+  font-family: "Futura Thin", 'Trebuchet MS', Arial, sans-serif;
+  font-size: 3em;
+  font-variant: small-caps;
+}
+#zen-intro img {
+  margin-top: -1.5em;
+  margin-bottom: -0.5em;
+  margin-left:3em;
+  margin-right: -3em;
+}
+#zen-summary p {
+  font-family: "Futura Thin", 'Trebuchet MS', Arial, sans-serif;
+  font-size: 1.1em;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 1.5em;
+  color: $firstBlockTextColor;
+}
+#zen-summary a:link {
+  color: $darkblue;
+  text-decoration: none;
+  border-bottom: 1px solid $green;
+}
+#zen-summary a:hover {
+  background-color: $green;
+  color: $white;
+  padding: 5px;
+}
+#zen-summary {
+  margin-top: 13vmin;
+}
+.row {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+.first-block {
+  margin-top:15vh;
+  margin-bottom:10vmax;
+}
+.navigation-star {
+  width: 0.5em;
+  height: auto;
+  position: absolute;
+  bottom: 50px;
+}

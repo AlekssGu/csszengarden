@@ -6,6 +6,7 @@
 
   <!--build:css css/styles.min.css-->
   <link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.1.2/foundation.min.css">
   <!--endbuild-->
 	<link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.csszengarden.com/zengarden.xml">
 
@@ -13,7 +14,7 @@
 	<meta name="author" content="Aleksandrs Gusevs">
 	<meta name="description" content="A demonstration of what can be accomplished visually through CSS-based design.">
 	<meta name="robots" content="all">
-  
+
 	<!--[if lt IE 9]>
 	<script src="script/html5shiv.js"></script>
 	<![endif]-->
@@ -52,17 +53,26 @@
 <body id="css-zen-garden">
 <div class="page-wrapper">
 
-	<section class="intro" id="zen-intro">
-		<header role="banner">
-			<h1>CSS Zen Garden</h1>
-			<h2>The Beauty of <abbr title="Cascading Style Sheets">CSS</abbr> Design</h2>
-		</header>
+	<div class="row text-center first-block">
+		<section class="intro" id="zen-intro">
+			<header role="banner">
+				<h1>CSS Zen Garden</h1>
+				<img src="images/between-titles-line.svg" title="I heart Latvia">
+				<h2>The Beauty of <abbr title="Cascading Style Sheets">CSS</abbr> Design</h2>
+			</header>
 
-		<div class="summary" id="zen-summary" role="article">
-			<p>A demonstration of what can be accomplished through <abbr title="Cascading Style Sheets">CSS</abbr>-based design. Select any style sheet from the list to load it into this page.</p>
-			<p>Download the example <a href="/examples/index" title="This page's source HTML code, not to be modified.">html file</a> and <a href="/examples/style.css" title="This page's sample CSS, the file you may modify.">css file</a></p>
-		</div>
+			<div class="summary" id="zen-summary">
+				<p>A demonstration of what can be accomplished through <abbr title="Cascading Style Sheets">CSS</abbr>-based design. Select any style sheet from the list to load it into this page.</p>
+				<p>Download the example <a href="/examples/index" title="This page's source HTML code, not to be modified.">html file</a> and <a href="/examples/style.css" title="This page's sample CSS, the file you may modify.">css file</a></p>
+			</div>
+		</section>
 
+		<svg xmlns="http://www.w3.org/2000/svg" width="25%" viewBox="0 0 621.31 590.9">
+		  <path class="navigation-star" fill="#39885E" d="M310.654 3.39l95.002 192.493 212.43 30.868L464.37 376.586l36.287 211.572-190.003-99.89-190.002 99.89 36.287-211.572L3.224 226.751l212.429-30.868z"/>
+		</svg>
+	</div>
+
+	<section>
 		<div class="preamble" id="zen-preamble" role="article">
 			<h3>The Road to Enlightenment</h3>
 			<p>Littering a dark and dreary road lay the past relics of browser-specific tags, incompatible <abbr title="Document Object Model">DOM</abbr>s, broken <abbr title="Cascading Style Sheets">CSS</abbr> support, and abandoned browsers.</p>
@@ -197,6 +207,8 @@
 
 <!--build:js js/main.min.js -->
 <script src="js/main.js"></script>
+<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/foundation/6.1.2/foundation.min.js"></script>
 <!-- endbuild -->
 </body>
 </html>
