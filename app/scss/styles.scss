@@ -24,45 +24,210 @@ $firstUnderlineColor: $green;
   font-size: 3em;
   font-variant: small-caps;
 }
-#zen-intro img {
-  margin-top: -1.5em;
-  margin-bottom: -0.5em;
-  margin-left:3em;
-  margin-right: -3em;
-}
 #zen-summary p {
+  font-family: "Futura Thin", 'Trebuchet MS', Arial, sans-serif;
+  color: $firstBlockTextColor;
+}
+#zen-summary a:link {
+  color: $darkblue;
+}
+#zen-summary a:hover {
+  background-color: $green;
+  color: $white;
+}
+.second-block {
+  background-color: $darkblue;
+  color: $white;
+  margin-bottom: -22%;
+}
+.second-block h3 {
+  margin-bottom: 2.3em;
+}
+.third-block {
+  background-color: $white;
+  color: $darkblue;
+  margin-bottom: -22%;
+}
+.third-block h3 {
+  margin-bottom: 2.3em;
+}
+.fourth-block {
+  background-color: $lightblue;
+  color: $white;
+  margin-bottom: -22%;
+}
+.fifth-block h3 {
+  margin-top: 0;
+  margin-bottom: 2.3em;
+}
+.fifth-block section p {
+  margin-bottom: 12em;
+}
+.fourth-block a:link {
+  color: $white;
+  text-decoration: none;
+  border-bottom: 2px solid $darkblue;
+}
+.fourth-block a:hover {
+  background-color: $darkblue;
+  color: $white;
+  padding: 5px;
+}
+.fifth-block {
+  background-color: $white;
+  color: $darkblue;
+  margin-bottom: -22%;
+}
+.sixth-block {
+  background-color: $darkblue;
+  color: $white;
+  margin-bottom: 5em;
+}
+.sixth-block h3 {
+  margin-top: 4em;
+}
+.sixth-block a {
+  color: $white;
+  text-decoration: none;
+  border-bottom: 2px solid $white;
+}
+.sixth-block a:hover {
+  background-color: $white;
+  color: $darkblue;
+  padding: 5px;
+}
+.seventh-block {
+  margin-top:5em;
+}
+.block p {
   font-family: "Futura Thin", 'Trebuchet MS', Arial, sans-serif;
   font-size: 1.1em;
   font-style: normal;
   font-variant: normal;
   font-weight: 700;
   line-height: 1.5em;
-  color: $firstBlockTextColor;
 }
-#zen-summary a:link {
-  color: $darkblue;
-  text-decoration: none;
-  border-bottom: 1px solid $green;
-}
-#zen-summary a:hover {
-  background-color: $green;
-  color: $white;
-  padding: 5px;
-}
-#zen-summary {
-  margin-top: 13vmin;
+.block h3 {
+  font-family: "Futura Thin", 'Trebuchet MS', Arial, sans-serif;
+  font-size: 3em;
+  font-variant: small-caps;
+  margin-top: 3em;
 }
 .row {
   margin-top: 2em;
   margin-bottom: 2em;
 }
-.first-block {
-  margin-top:15vh;
-  margin-bottom:10vmax;
+.after-star {
+  margin-top: 0;
+  margin-bottom: 25vh;
 }
-.navigation-star {
-  width: 0.5em;
-  height: auto;
-  position: absolute;
-  bottom: 50px;
-}
+/* Small only */
+      @media screen and (max-width: 39.9375em) {
+        .second-block h3 {
+          margin-bottom: 0;
+        }
+        .second-block {
+          padding-bottom:5em;
+        }
+        .third-block h3 {
+          margin-bottom: 0;
+          margin-top: 3em;
+        }
+        .third-block {
+          padding-bottom: 5em;
+        }
+        .fourth-block {
+          margin-top:-10em;
+          padding-bottom:10em;
+        }
+        .fourth-block h3 {
+          margin-top: 3em;
+        }
+        .fifth-block h3 {
+          margin-top: 3em;
+          margin-bottom: 0;
+        }
+        .fifth-block {
+          margin-top:-10em;
+          padding-bottom:5em;
+        }
+        .sixth-block {
+          margin-top:-15em;
+        }
+        #zen-intro img {
+          margin-top:-1.5em;
+          margin-bottom:-0.5em;
+          margin-left:1em;
+          margin-right:-1em;
+          width:100%;
+          overflow: hidden;
+        }
+      }
+
+      /* Medium and up */
+      @media screen and (min-width: 40em) {
+        #zen-intro img {
+          margin-top: -1.5em;
+          margin-bottom: -0.5em;
+          margin-left:3em;
+          margin-right: -3em;
+        }
+        #zen-summary p {
+          font-size: 1.1em;
+          font-style: normal;
+          font-variant: normal;
+          font-weight: 700;
+          line-height: 1.5em;
+        }
+        #zen-summary a:link {
+          text-decoration: none;
+          border-bottom: 2px solid $green;
+        }
+        #zen-summary a:hover {
+          padding: 5px;
+        }
+        #zen-summary {
+          margin-top: 13vmin;
+        }
+        .first-block {
+          margin-top:15vh;
+        }
+        .navigation-star {
+          margin-top:10vh;
+          cursor: pointer;
+        }
+        .navigation-star-other {
+          margin-top:-15vh;
+          cursor: pointer;
+        }
+        .text-block {
+          margin-top: 10vh;
+          margin-bottom: 25vh;
+        }
+        .after-star {
+          margin-top: 25vh;
+        }
+        .block {
+          margin-top:-13%;
+          margin-bottom:-19em;
+        }
+        .fifth-block h3 {
+          margin-top: 4em;
+          margin-bottom: 2.3em;
+        }
+        .sixth-block {
+          margin-bottom: 5em;
+        }
+        .seventh-block {
+          padding-top:-5em;
+        }
+      }
+
+      /* Medium only */
+      @media screen and (min-width: 40em) and (max-width: 63.9375em) {}
+
+      /* Large and up */
+      @media screen and (min-width: 64em) {}
+
+      /* Large only */
+      @media screen and (min-width: 64em) and (max-width: 74.9375em) {}
